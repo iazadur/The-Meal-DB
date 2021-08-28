@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meal DB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="container">
+
+   
+    <!-- Modal -->
+    <div onclick="" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div id="show-details" class="modal-dialog modal-dialog-centered">
+            
+        </div>
+    </div>
+
+
+
+
+
+    <h1 class="text-center text-info py-4">Search Your Fevorite Food</h1>
+    <div id="error" class="alert alert-danger text-center" role="alert">
+
+    </div>
+    <div class="input-group mb-3 w-50 mx-auto mb-4">
+        <input type="text" id="input-value" class="form-control" placeholder="Search food what you want"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchItem()" class="btn btn-outline-secondary" type="submit"
+            id="button-addon2">Search</button>
+    </div>
+
+
+    <div id="foodContainer" class="row row-cols-1 row-cols-md-3 g-4">
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="js/mealdb.js"></script>
+</body>
+
+</html>
