@@ -1,9 +1,15 @@
 
 const showAlert = document.getElementById('error')
 showAlert.style.display = 'none'
+const inputValue = document.getElementById('input-value')
+inputValue.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        document.getElementById('button-addon2').click()
+    }
+})
 
 const searchItem = () => {
-    const inputValue = document.getElementById('input-value')
+    
     const searchValue = inputValue.value
 
     if (searchValue == '') {
